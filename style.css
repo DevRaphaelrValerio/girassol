@@ -54,10 +54,9 @@ a:hover {
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     width: 100%;
-    display: block;
     
     
 }
@@ -73,8 +72,9 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 30px;
+    padding-left: 20px;
     font-size: 2em;;
+    padding-right: 20px;
 }
 
 section > p {

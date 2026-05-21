@@ -1,24 +1,24 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Eater&family=Momo+Signature&display=swap');
 
 :root {
     --font: 'Dancing Script', cursive;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* IMPORTANTE */
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font);
 }
 
-html, body {
-    width: 100%;
-    overflow-x: hidden; /* impede rolagem lateral */
+html {
     background-color: darkgray;
+    min-height: 100vh;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    background-color: darkgray;
+    min-height: 100vh;
 }
 
 header {
@@ -28,30 +28,20 @@ header {
 }
 
 header > h1 {
-    padding: 40px 20px;
+    padding-top: 50px;
     font-variant: small-caps;
-    font-size: clamp(2em, 6vw, 4em);
-    font-family: var(--font);
+    padding-bottom: 50px;
+    font-size: 3em;
 }
 
 a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-section {
-    padding: 10vh 20px;
-    line-height: 1.8em;
-    font-size: clamp(1em, 4vw, 1.5em);
-}
-
-section > p {
-    padding-bottom: 2em;
 }
 
 .normal {
@@ -60,39 +50,53 @@ section > p {
 }
 
 .imagem {
+    background-color: darkgray;
     color: white;
-
+    box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0);
     background-size: cover;
-    background-position: center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-
     width: 100%;
-
-    box-shadow: inset 6px 6px 13px rgba(0,0,0,0.5);
-
-    background-attachment: scroll; /* FIXED quebra no celular */
 }
 
 .imagem > p {
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px;
-
-    display: inline;
-
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    display: inline-block;
     text-shadow: 2px 2px 0px black;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 2em;;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section#img01 {
     background-image: url("imagens/img1.jpeg");
+    background-position: center center;
+    
 }
 
 section#img02 {
     background-image: url("imagens/img2.jpeg");
+    background-position: center center;
+    
 }
 
 section#img03 {
     background-image: url("imagens/img3.png");
+    background-position: center center;
+    background-attachment: scroll; ;
+    
 }
+
 
 footer {
     background-color: black;
